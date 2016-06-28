@@ -1,0 +1,18 @@
+A variety of attendance monitoring systems are employed in schools, colleges
+and organizations. In schools and colleges, the attendance of each student
+is taken manually by the teacher. The teacher notes down roll numbers of
+students present for that class and updates it on to the website later. On
+an average 5-10 minutes are spent in taking attendance of each class. The
+above steps are to be carried out by each teacher for every class he/she
+engages. The attendance data of students is not updated onto the website
+everyday but, once in a week or in a fortnight.
+In various organizations, automated attendance systems are used which
+are based on electronic tags, barcode badges, magnetic stripe cards, biomet-
+rics etc. These systems are static and are mount at specic places. Every
+individual has to approach the module to cast his attendance. Thus, these
+systems cannot be employed in schools and colleges as they involve taking
+attendance of a large number of students on an hourly basis.
+We aim to address the issues in existing attendance monitoring system
+by designing Smart Attendance System. It is a portable biometrics based
+attendance system which updates the attendance directly onto the website
+without teacher0s intervention.
