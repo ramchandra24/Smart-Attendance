@@ -1,2 +1,19 @@
-#example file
-#testing commit
+Abstract 
+
+Internet has been entering into every aspect of today0s life. Every
+device is becoming smart by staying connected to the internet. At-
+tendance monitoring is one area where the usage of smart devices is
+limited. In today0s busy life, parents are not able to track the day-
+to-day activities of their children, they are not even aware of whether
+their children are attending their classes regularly. Attendance plays
+a very important role in modern education system. To ensure that
+students attend their classes on a regular basis, Educational institu-
+tions are taking strict measures. But the existing systems have 
+aws
+in them, they are not 100 percent accurate, for example, the teachers
+may fail to recognize any proxy attendances and it is also an overhead
+on teacher to update the attendance on website. Taking attendance in
+class as well as updating it onto the website are time consuming and
+extra burden on teacher. If the attendance is not updated on time,
+the parents are unaware of their ward0s status. This problem has been
+overlooked for a long time.
