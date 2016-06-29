@@ -1,1 +1,1 @@
-1. If we want to send the roll-numbers of students who are absent everytime, each module has to know the roll-numbers of students registered for every subject.
+1. If we want to send the roll-numbers of students who are absent everytime, each module has to know the roll-numbers of students registered for every subject. Or, there has to be an ACK mechanism which indicates when a particular student has not registered for the course.
