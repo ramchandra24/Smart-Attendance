@@ -1,14 +1,12 @@
 Smart Attendance System consists of two parts
 1. Handheld device or client.
 2. Server.
-Handheld device consists of a ngerprint module used for person identi-
-cation. Fingerprints of students are stored on the module initially and
-each student is assigned an ID ( Roll number ) for identication. These
-identiers, corresponding to students present in the class are sent to mi-
-crocontroller serially. Microcontroller adds the header information to the
-data received. The header includes information about the class in progress,
-subject, teacher etc. This data is sent to the xbee module serially and it is
-then transmitted wirelessly to the receiver. At the receiver end, xbee
+
+A typical usecase of Smart Attendance System is shown in fig. 
+
+Handheld device consists of a fingerprint module for student identication, a microcontroller and a Zigbee transmitter. Fingerprint of each student is stored on the module initially. This phase is called 'Enrollment' wherein each student is assigned a unique ID, analogous to Roll number, which will be later used for identification. 
+
+At the receiver end, xbee
 module receives the data sent by the transmitter and sends it serially to the
 server computer. A 0C0 program is written on the server which monitors
 this serial port and reads data from the port. The data packet received
