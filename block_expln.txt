@@ -1,17 +1,18 @@
-Smart Attendance System consists of two parts
+Smart Attendance System is made up of two parts:
 1. Handheld device or client.
 2. Server.
 
 A typical usecase of Smart Attendance System is shown in fig. 
+Multiple handheld devices and a single server are used in a school/college environment as shown in the fig. 
+Each handheld device is made up of a fingerprint module, a microcontroller and a Zigbee transceiver. 
+The fingerprint module is a biometric device used for student identification. It comes with a storage to save user's fingerprints and an on board processor to identify them later on. Depending on the size of class, modules of different capacity can be used.  The fingerprint module attaches a unique ID for each fingerprint stored and on identification returns the same ID.
 
-Handheld device consists of a fingerprint module for student identication, a microcontroller and a Zigbee transmitter. Fingerprint of each student is stored on the module initially. This phase is called 'Enrollment' wherein each student is assigned a unique ID, analogous to Roll number, which will be later used for identification. 
+The fingerprint module sends the ID of user on a serial interface. A microcontroller connected to it reads the ID, interprets it and forwards it to the server via Zigbee.
 
-At the receiver end, xbee
-module receives the data sent by the transmitter and sends it serially to the
-server computer. A 0C0 program is written on the server which monitors
-this serial port and reads data from the port. The data packet received
-contains information about the students present in the class. This data is
-used to generate MySQL queries to fetch the attendance data corresponding
-to those students and update their attendance in the database. Once the
-attendance data is updated on the server, it is instantaneously re
-ected on the website.
+The Zigbee transceiver is a radio frequency transceiver operating at 2.4GHz frequency. Zigbee can operate at distances ranging 100m and hence is suitable for the application.
+
+
+
+
+Working :
+Handheld device consists of a fingerprint module - for student identication, a microcontroller and a Zigbee transmitter. Fingerprint of each student is stored on the module initially. This phase is called 'Enrollment' wherein each student is assigned a unique ID, analogous to Roll number, which will be later used for identification. 
