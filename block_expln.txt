@@ -1,17 +1,26 @@
-Smart Attendance System is made up of two parts:
-1. Handheld device or client.
-2. Server.
+Smart Attendance System comprises of:
+1. Multiple Handheld devices 
+2. Gateway device
+3. Server
 
 A typical usecase of Smart Attendance System is shown in fig. 
-Multiple handheld devices and a single server are used in a school/college environment as shown in the fig. 
+Handheld devices are used in different classrooms and a single server is used in a school/college environment as shown in the fig. 
+
 Each handheld device is made up of a fingerprint module, a microcontroller and a Zigbee transceiver. 
-The fingerprint module is a biometric device used for student identification. It comes with a storage to save user's fingerprints and an on board processor to identify them later on. Depending on the size of class, modules of different capacity can be used.  The fingerprint module attaches a unique ID for each fingerprint stored and on identification returns the same ID.
-
-The fingerprint module sends the ID of user on a serial interface. A microcontroller connected to it reads the ID, interprets it and forwards it to the server via Zigbee.
-
-The Zigbee transceiver is a radio frequency transceiver operating at 2.4GHz frequency. Zigbee can operate at distances ranging 100m and hence is suitable for the application.
+The fingerprint module is a biometric device used for student identification. It comes with a storage to save user's fingerprints and an on board processor to identify them later on. 
+Depending on the size of class, modules of different capacity can be used.  The fingerprint module attaches a unique ID for each fingerprint stored and on identification returns the same ID.
+The fingerprint module sends the ID of user on a serial interface. A microcontroller connected to it reads the ID, interprets it and forwards it to the gateway device via Zigbee interface.
 
 
+The fingerprint module and the zigbee device are both interfaced to the microcontroller. The microcontroller recieves
+information from the fingerprint module, interprets it and then intelligently transmits the required data to the gateway device.
+
+
+A zigbee device(coordinator) at the server end acts as a gateway between the zigbee network and the Server, providing the data
+from the remote handheld devices into a serial interface received by the server. 
+
+
+Server/PC receives attendance information from the gateway device and updates it into a central database.
 
 
 Working :
