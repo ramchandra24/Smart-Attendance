@@ -3,6 +3,8 @@ each module has to know the roll-numbers of students registered for every subjec
 Or, there has to be an ACK mechanism which indicates when a particular student 
 has not registered for the course.
 Ex: only a few students have taken a course. How to update attendance properly ?
+    even when present data is sent, students who have not registered will be updated
+    as absent by the system.
 
 2. What is the maximum size of each transmission ?
 
