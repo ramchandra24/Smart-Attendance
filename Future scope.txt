@@ -1,4 +1,5 @@
 1. Matching the attendance data against timetable. Not allowing the
     teacher to update attendance data later on (out of class hours)
 2. Generating attendance reports for both studnets and teachers.
-3. 
+3. Generating a timetable based on attendance report :P... what time is maximum 
+    attendance seen for each class.
