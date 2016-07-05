@@ -1,0 +1,4 @@
+1. Matching the attendance data against timetable. Not allowing the
+    teacher to update attendance data later on (out of class hours)
+2. Generating attendance reports for both studnets and teachers.
+3. 
